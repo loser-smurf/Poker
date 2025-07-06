@@ -2,6 +2,7 @@ use crate::card::{Card, Rank, Suit};
 use rand::seq::SliceRandom;
 use rand::thread_rng;
 
+#[derive(Debug, Clone)]
 pub struct Deck {
     cards: Vec<Card>,
 }
