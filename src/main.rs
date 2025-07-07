@@ -2,6 +2,7 @@ mod card;
 mod deck;
 mod player;
 mod game;
+mod hand;
 
 fn main() {
     let mut deck = deck::Deck::new_shuffled();
