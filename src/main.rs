@@ -1,11 +1,16 @@
 mod card;
 mod deck;
-mod player;
 mod game;
 mod hand;
-mod server;
+mod player;
+mod models;
+mod commands;
+mod network;
+mod utils;
+
+use crate::network::start_server;
 
 #[tokio::main]
 async fn main() {
-    server::start_server().await;
+    start_server().await;
 }
